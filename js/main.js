@@ -42,5 +42,8 @@ $(document).ready(function (){
   // add information window
   var infowindow = new google.maps.InfoWindow({
     content:  '<div class="info"><strong>This is my company</strong><br><br>My company address is here<br> 32846 Sydney</div>'
-  });  
+  });
+
+  //Skrollr for parallax
+  var s = skrollr.init();
 });

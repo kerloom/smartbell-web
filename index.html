@@ -13,9 +13,9 @@
 <body>
 
   <!-- primera seccion - Home -->
-  <div id="home" class="home">
+  <div id="home" class="pad-section">
     <div class="text-vcenter">
-      <h1>Con SmartBell las entradas se automatizan</h1>
+        <h1>Con SmartBell las entradas se automatizan</h1>
       <h3>con un timbre videoportero de pantalla touch, en el cual las visitas pueden contactarse con los inquilinos</h3>
     </div>
   </div>
@@ -53,39 +53,75 @@
 
   <!-- tercera sección -->
   <div id="edificio" class="pad-section">
-    <div class="ventajas">
-      <div class="container">
-        <div class="row item-row">
-          <br>
-          <div class="col-sm-6 col-xs-12">
-            <div class="panel panel-default">
-              <div class="panel-heading sb-heading"><strong>Acceso Remoto</strong></div>
-              <div class="panel-body">No importa dónde se encuentre el usuario, siempre podrá contestar, ya que funciona por Internet.</div>
-            </div>
-          </div> 
-          <div class="col-sm-6 col-xs-12">
-            <div class="panel panel-default">
-              <div class="panel-heading sb-heading2"><strong>Instalación y Mantenimiento</strong></div>
-              <div class="panel-body">La instalación del sistema es mínima y no requiere de mantenimientos recurrentes.</div>
-            </div>
-          </div> 
-          <div class="col-sm-6 col-xs-12">
-            <div class="panel panel-default">
-              <div class="panel-heading sb-heading3"><strong>Seguridad</strong></div>
-              <div class="panel-body">El registro de entradas permite un control y administración de visitas.</div>
+    <div id="edificio-cont">
+
+    </div>
+  </div>
+  <!-- /tercera seccion -->
+
+
+  <div id="beneficios" class="pad-section">
+    <div class="container">
+      <div class="row">
+        <div class="row">
+          <div class="col-sm-3 col-xs-6">
+            <div data-bottom-top="transform:translate(100vw)" data-bottom-bottom="transform:translate(0vw)" data-top-top="transform:translate(0vw)" data-top-bottom="transform:translate(100vw)">
+              <img src="img/icono_accesos.png" />
+              <h4>Acceso Remoto</h4>
+              <p>No importa dónde se encuentre el usuario, siempre podrá contestar, ya que funciona por Internet.</p>
             </div>
           </div>
-          <div class="col-sm-6 col-xs-12">
-            <div class="panel panel-default">
-              <div class="panel-heading"><strong>Reducción de Personal</strong></div>
-              <div class="panel-body">No se requiere personal para el control de accesos.</div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-3 col-xs-6">&nbsp</div>
+          <div class="col-sm-3 col-xs-6">
+            <div data-bottom-top="transform:translate(75vw)" data-bottom-bottom="transform:translate(0vw)" data-top-top="transform:translate(0vw)" data-top-bottom="transform:translate(75vw)">
+              <img src="img/icono_accesos.png" />
+              <h4>Instalación y Mantenimiento</h4>
+              <p>La instalación del sistema es mínima y no requiere de mantenimientos recurrentes.</p>
+            </div>
+          </div>
+        </div> 
+
+        <div class="row">
+          <div class="col-sm-3 col-xs-6">&nbsp</div>
+          <div class="col-sm-3 col-xs-6">&nbsp</div>
+          <div class="col-sm-3 col-xs-6">
+            <div data-bottom-top="transform:translate(-75vw)" data-bottom-bottom="transform:translate(0vw)" data-top-top="transform:translate(0vw)" data-top-bottom="transform:translate(-75vw)">
+              <img src="img/icono_accesos.png" />
+              <h4>Seguridad</h4>
+              <p>El registro de entradas permite un control y administración de visitas.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-3 col-xs-6">&nbsp</div>
+          <div class="col-sm-3 col-xs-6">&nbsp</div>
+          <div class="col-sm-3 col-xs-6">&nbsp</div>
+          <div class="col-sm-3 col-xs-6">
+            <div data-bottom-top="transform:translate(-100vw)" data-bottom-bottom="transform:translate(0vw)" data-top-top="transform:translate(0vw)" data-top-bottom="transform:translate(-100vw)">
+              <img src="img/icono_accesos.png" />
+              <h4>Reducción de Personal</h4>
+              <p>No se requiere personal para el control de accesos.</p>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+
+  <!-- tercera sección -->
+  <div id="edificio" class="pad-section">
+    <div id="edificio-cont">
+
+    </div>
+  </div>
   <!-- /tercera seccion -->
+
+
+
 
   <!-- Cuarta sección Funcionalidad -->
   <div id="funciones" class="pad-section">
@@ -114,6 +150,9 @@
   <!-- /cuarta sección -->
 
   <!-- google map -->
+  <div class="container">
+    <h2 class="text-center">Encuéntranos:</h2> <hr />
+  </div>
   <div id="google_map"></div>
   <!-- /google map -->
 
@@ -161,6 +200,7 @@
   <script src="js/jquery-1.10.2.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="//maps.google.com/maps/api/js?sensor=true"></script>
+  <script type="text/javascript" src="js/skrollr.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
