@@ -47,3 +47,10 @@ $(document).ready(function (){
   //Skrollr for parallax
   var s = skrollr.init();
 });
+
+$(function() {  
+    var glower = $('#glower');
+    window.setInterval(function() {  
+        glower.toggleClass('active');
+    }, 1000);
+});
