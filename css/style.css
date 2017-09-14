@@ -16,11 +16,9 @@ html, body {
     top: 0;
     left: 0;
 }
-#google_map {
-  height: 500px;
-}
 
 /*###### Slides image and position #######*/
+
 .slide {
     position:absolute;
     top:0;
@@ -28,12 +26,25 @@ html, body {
     width:50%;
     height:50%;
 }
+.slide-1{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.slide-6{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*###### FONDOS DE SLIDES #######*/
+
 #main {
     background: url('../img/BACKGROUNDS/index1.png') no-repeat center center;
     background-size: cover;
 }
 #funciones {
-    background: url('../img/BACKGROUNDS/building.png') no-repeat center center;
+    background: url('../img/BACKGROUNDS/building-op-8.png') no-repeat center center;
     background-size: cover;
     -webkit-transform: translate(0,100%);
     -ms-transform: translate(0,100%);
@@ -41,7 +52,7 @@ html, body {
     transform: translate(0,100%);
 }
 #funciones-2 {
-    background: url('../img/BACKGROUNDS/building.png') no-repeat center center;
+    background: url('../img/BACKGROUNDS/building-op-8.png') no-repeat center center;
     background-size: cover;
     -webkit-transform: translate(100%,100%);
     -ms-transform: translate(100%,100%);
@@ -72,89 +83,28 @@ html, body {
     -o-transform: translate(200%,100%);
     transform: translate(200%,100%);
 }
-/*######## Slide captions  and positions ########*/
 
-/*######## MAIN SLIDE ########*/
-p, h1 { margin: 0; }
-h1 { margin-bottom: 0.2em; }
-p { line-height: 1.33em; }
 
-#main .caption-1 {
-    position: absolute;
-    top: 5%;
-    left: 39%;
-    font-size: 1.5rem;
-    color: #fff;
-}
-#main .caption-2 {
-    position: absolute;
-    bottom: 15%;
-    right: 14%;
-    text-align: right;
-    color: #fff;
-    font-size: 1.2rem;
-}
-a.button{
-    position: absolute;
-    top: 2%;
-    right: 2%;
-    height:20px;
-    width: 60px;
-    border: 1px solid white;
-    border-radius: 8px;
-    background-color: transparent;
-}
-a.button p{
-    float: inherit;
-    position:fixed;
-    
-    margin-top: 5px;
-    margin-left: 5px;
-    font-size:8px;
-    color: white;
-}
-i.glower {
-    /*background-color: rgba(100,101,105,.8);*/
-    color: rgba(255,255,255,.8);
-    border-radius:50%;
-    font-size: 2rem;
-    position: absolute;
-    bottom: 5%;
-    right: 46%;
-    -webkit-animation: neon1 .5s ease-in-out infinite alternate;
-    -moz-animation: neon1 .5s ease-in-out infinite alternate;
-    animation: neon1 .5s ease-in-out infinite alternate;
-}
-@-webkit-keyframes neon1 {
-  from {
-    box-shadow: 0 0 4px rgb(255,255,255), 0 0 8px rgb(255,255,255), 0 0 10px rgb(255,255,255), 0 0 15px rgb(255,255,255),0), 0 0 20px rgb(255,255,255);
-  }
-  to {
-    box-shadow: 0 0 2px rgb(255,255,255), 0 0 3px rgb(255,255,255), 0 0 4px rgb(255,255,255), 0 0 5px rgb(255,255,255), 0 0 6px rgb(255,255,255), 0 0 7px rgb(255,255,255), 0 0 8px rgb(255,255,255);
-  }
-}
-div.glower i {
-    height; 10px;
-    color: white;
-}
-/*######## FUNCIONES SLIDE ########*/
+/*######## TITULOS DE SLIDES ########*/
+
 #funciones .caption {
     position: absolute;
     left: 5%;
     right: auto;
-    top: 10%;
+    top: 8%;
     color: #fff;
-    text-align: left;
+    font-size: 4vh;
+    text-shadow: 0px 0px 30px #fff;
 }
 
 #funciones-2 .caption {
     position: absolute;
+    left: 5%;
     right: auto;
-    left: 50%;
-    top: 50%;
-    bottom: auto;
-    color: #000;
-    text-align: left;
+    top: 8%;
+    color: #fff;
+    font-size: 4vh;
+    text-shadow: 0px 0px 10px #fff;
 }
 #acceso .caption {
     position: absolute;
@@ -175,97 +125,199 @@ div.glower i {
 }
 #contacto .caption {
     position: absolute;
-    left: 5%;
-    right: auto;
+    
+    color: #fff;
+    font-size: 4vh;
+}
+
+/*######## MAIN  SLIDE ########*/
+p, h1 { margin: 0;
+}
+h1 { margin-bottom: 0.2em; }
+p { line-height: 1.33em; }
+
+#main .caption-1 {
+    position: absolute;
+    top:2vw;
+    font-size: 2.5vw;
     color: #fff;
 }
-/*######## main objects and positions ########*/
-
-div.card-1 {
+#main .caption-2 {
     position: absolute;
-    top: 2.5rem;
-    left: -1rem;
-    width: 120px;
-    height:67%;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 2px 2px 3px #000;
-    margin:50px;
+    bottom: 12%;
+    color: #fff;
+    font-size: 2.5vw;
 }
-div.card-2 {
+a.button{
     position: absolute;
-    top: 2.5rem;
-    left: 8rem;
-    width: 120px;
-    height:67%;
-    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 4vw;
+    right: 3%;
+    height:3vw;
+    width: 8vw;
+    border: 1px solid white;
     border-radius: 8px;
-    box-shadow: 2px 2px 3px #000;
-    margin:50px;
+    background-color: transparent;
+    -webkit-animation: neon1 .5s ease-in-out infinite alternate;
+    -moz-animation: neon1 .5s ease-in-out infinite alternate;
+    animation: neon1 .5s ease-in-out infinite alternate;
 }
-div.card-3 {
+a.button p{
+    text-align: center;
     position: absolute;
-    top: 2.5rem;
-    left: 17rem;
-    width: 120px;
-    height:67%;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 2px 2px 3px #000;
-    margin:50px;
+    margin:auto;
+    font-size: 1.2vw;
+    color: white;
 }
-div.card-4 {
+div.scroll-down{
     position: absolute;
-    top: 2.5rem;
-    left: 26rem;
-    width: 120px;
-    height:67%;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 2px 2px 3px #000;
-    margin:50px;
+    display: flex; 
+    bottom: 5vh;
+    border-radius:50%;
+    -webkit-animation: neon1 .5s ease-in-out infinite alternate;
+    -moz-animation: neon1 .5s ease-in-out infinite alternate;
+    animation: neon1 .5s ease-in-out infinite alternate;
 }
-div.card-5 {
-    position: absolute;
-    top: 2.5rem;
-    left: 35rem;
-    width: 120px;
-    height:67%;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 2px 2px 3px #000;
-    margin:50px;
+div.scroll-down i {
+    font-size: 10vh;
+    color: rgba(255,255,255,.8);
+}
+@-webkit-keyframes neon1 {
+  from {
+    box-shadow: 0 0 4px rgb(255,255,255), 0 0 8px rgb(255,255,255), 0 0 10px rgb(255,255,255), 0 0 15px rgb(255,255,255),0), 0 0 20px rgb(255,255,255);
+  }
+  to {
+    box-shadow: 0 0 2px rgb(255,255,255), 0 0 3px rgb(255,255,255), 0 0 4px rgb(255,255,255), 0 0 5px rgb(255,255,255), 0 0 6px rgb(255,255,255), 0 0 7px rgb(255,255,255), 0 0 8px rgb(255,255,255);
+  }
+}
+div.glower i {
+    height; 10px;
+    color: white;
 }
 
-div.card-1 div.card-content,
-div.card-2 div.card-content,
-div.card-3 div.card-content,
-div.card-4 div.card-content,
-div.card-5 div.card-content{
-    text-align: left;
-    font-size: .65rem;
-    height: 50%;
-    margin-bottom: 10px;
-    margin-left: 8%;
-    margin-right: 8%;
+/*######## SLIDE FUNCIONES ########*/
+
+.card{
+    position: absolute;
+    width: 17%;
+    height: 55%;
+    top: 11%;
+    margin:5%;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px #fff;
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(rgba(255,255,255,.4),rgba(255,255,255,.8), rgba(255,255,255,.9)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgba(255,255,255,.4), rgba(255,255,255,.8), rgba(255,255,255,.9)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgba(255,255,255,.4), rgba(255,255,255,.8), rgba(255,255,255,.9)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgba(255,255,255,.4), rgba(255,255,255,.8), rgba(255,255,255,.9)); /* Standard syntax */
+    
 }
-div.card-1 div.card-content img,
-div.card-2 div.card-content img,
-div.card-3 div.card-content img,
-div.card-4 div.card-content img,
-div.card-5 div.card-content img{
-    margin: 0;
-    width: 100%;
-    height: auto;
+#funciones .card-1 {
+    /*background: url('../img/CARDS/mensajes-1-5.png') no-repeat center center;
+    background-size: cover;*/
+    left: 0%;
+    background-color: rgba(255,255,255,.6);
 }
-div.card-1 div.card-content h4,
-div.card-2 div.card-content h4,
-div.card-3 div.card-content h4,
-div.card-4 div.card-content h4,
-div.card-5 div.card-content 54{
+#funciones .card-2 {
+   /*background: url('../img/CARDS/encuestas-1-5.png') no-repeat center center;
+    background-size: cover;*/
+    left: 18%;
+    background-color: rgba(255,255,255,.6);
+}
+#funciones .card-3 {
+    /*background: url('../img/BACKGROUNDS/architecture.jpg') no-repeat center center;
+    background-size: cover;*/
+    background-color: rgba(255,255,255,.6);
+    left: 36%;
+}
+
+#funciones .card-4 {
+    /*background: url('../img/BACKGROUNDS/architecture.jpg') no-repeat center center;
+    background-size: cover;*/
+    left: 54%;
+    background-color: rgba(255,255,255,.6);
+}
+#funciones .card-5 {
+    /*background: url('../img/BACKGROUNDS/architecture.jpg') no-repeat center center;
+    background-size: cover;*/
+    left: 72%;
+    background-color: rgba(255,255,255,.6);
+}
+.card-content {
+    font-size: 1.2vw;
+    height: 100%;
+}
+.img-content{
+    width:60%;
+    margin: 0 auto;
+}
+.img-content img{
+    width:60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+.text-content{
+    position: relative;
+    top:10%;
+    margin: 5%;
+    text-align: justify;
+    border-radius:5px;
+    color:black;
+    font-style: bold;
+}
+.card-content h4{
     margin: 0;
-    margin-bottom: .6rem;
-     text-align: center;
+    margin-top: 10%;
+    margin-bottom: 8%;
+    text-align: center;
+    font-size: 2vw;
+    color: black;
+}
+/*####### SLIDE FUNCIONES-2 ########*/
+#funciones-2 .card-1 {
+    /*background: url('../img/CARDS/mensajes-1-5.png') no-repeat center center;
+    background-size: cover;*/
+    left: 0%;
+    background-color: rgba(255,255,255,.6);
+}
+#funciones-2 .card-2 {
+   /*background: url('../img/CARDS/encuestas-1-5.png') no-repeat center center;
+    background-size: cover;*/
+    left: 18%;
+    background-color: rgba(255,255,255,.6);
+}
+#funciones-2 .card-3 {
+    /*background: url('../img/BACKGROUNDS/architecture.jpg') no-repeat center center;
+    background-size: cover;*/
+    background-color: rgba(255,255,255,.6);
+    left: 36%;
+}
+
+#funciones-2 .card-4 {
+    /*background: url('../img/BACKGROUNDS/architecture.jpg') no-repeat center center;
+    background-size: cover;*/
+    left: 54%;
+    background-color: rgba(255,255,255,.6);
+}
+#funciones-2 .card-5 {
+    /*background: url('../img/BACKGROUNDS/architecture.jpg') no-repeat center center;
+    background-size: cover;*/
+    left: 72%;
+    background-color: rgba(255,255,255,.6);
+}
+
+/*####### SLIDE CONTACTO ########*/
+#map {
+    position:absolute;
+    top:22%;
+    left: 10%;
+    height: 60%;
+    width: 30%;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px #fff;
 }
 
 /*####### HELPER ########*/
@@ -274,11 +326,14 @@ div.card-5 div.card-content 54{
     position:absolute;
     left:0;
     top: 0;
-    height: 2400%;
+    margin:0;
+    padding:0;
+    height: 1800%;
     width: 0px;
+    display: none;
 }
 .marker {
-    height: 16.66%;
+    height: 16.67%;
     width: 100%;
 }
 .red {
@@ -302,15 +357,11 @@ div.card-5 div.card-content 54{
 
 /*####### TEXT SETTINGS #######*/
 h1.shadow {
-    text-shadow: 1px 1px 4px #000;
+    text-shadow: 3px 3px 8px #000;
 }
 p.shadow {
-    text-shadow: 1px 1px 3px #000;
+    text-shadow: 2px 2px 3px #000;
 }
-a.box-shadow {
-    box-shadow: 0px 0px 8px #fff;
-}
-
 
 
 
