@@ -198,7 +198,21 @@ div.glower i {
 }
 
 /*######## SLIDE FUNCIONES ########*/
-
+a.backToTop{
+    position: absolute;
+    display: flex;
+    top:10%;
+    right:10%;
+    border-radius:50%;
+    text-decoration:none;
+    -webkit-animation: neon1 .5s ease-in-out infinite alternate;
+    -moz-animation: neon1 .5s ease-in-out infinite alternate;
+    animation: neon1 .5s ease-in-out infinite alternate;
+}
+a.backToTop i{
+    font-size: 10vh;
+    color: rgba(255,255,255,.8);
+}
 .card{
     position: absolute;
     width: 17%;
