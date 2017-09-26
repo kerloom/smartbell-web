@@ -36,6 +36,11 @@ html, body {
     align-items: center;
     justify-content: center;
 }
+.slide-4{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
 
 /*###### FONDOS DE SLIDES #######*/
 
@@ -108,12 +113,9 @@ html, body {
 }
 #acceso .caption {
     position: absolute;
-    right: auto;
-    left: 5%;
     top: 5%;
     bottom: auto;
-    color: #fff;
-    text-align: left;
+    color: #000;
 }
 #beneficios .caption {
     position: absolute;
@@ -144,7 +146,7 @@ p { line-height: 1.33em; }
 }
 #main .caption-2 {
     position: absolute;
-    bottom: 12%;
+    bottom:6%;
     color: #fff;
     font-size: 2.5vw;
 }
@@ -170,6 +172,55 @@ a.button p{
     margin:auto;
     font-size: 1.2vw;
     color: white;
+}
+div.descripcion-card{
+    position: absolute;
+    width: 20vw;
+    height: 65vh;
+    background-color: rgba(255,255,255,.5);
+    align-content: center;
+    border-radius: 8px;
+    top: 9%;
+    margin:5%;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px #fff;
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(rgba(255,255,255,.4),rgba(255,255,255,.8), rgba(255,255,255,.9)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgba(255,255,255,.4), rgba(255,255,255,.8), rgba(255,255,255,.9)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgba(255,255,255,.4), rgba(255,255,255,.8), rgba(255,255,255,.9)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgba(255,255,255,.4), rgba(255,255,255,.8), rgba(255,255,255,.9)); /* Standard syntax */
+}
+div.descripcion-card .img-content{
+    width:50%;
+    margin: 0 auto;
+}
+div.descripcion-card .img-content img{
+    width:100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+div.descripcion-card .text-content{
+    position: relative;
+    margin: 5%;
+    margin-top: 10%;
+    text-align: justify;
+    color:black;
+    font-size: 2vh;
+}
+div.descripcion-card .content h4{
+    margin: 0;
+    margin-top: 10%;
+    margin-bottom: 8%;
+    text-align: center;
+    font-size: 2vw;
+    color: black;
+}
+div.descripcion-card.card-1{
+    left:12%;
+}
+div.descripcion-card.card-2{
+    right:12%;
 }
 div.scroll-down{
     position: absolute;
@@ -198,18 +249,18 @@ div.glower i {
 }
 
 /*######## SLIDE FUNCIONES ########*/
-a.backToTop{
+a.back{
     position: absolute;
     display: flex;
     top:10%;
     right:10%;
     border-radius:50%;
-    text-decoration:none;
+    text-decoration: none;
     -webkit-animation: neon1 .5s ease-in-out infinite alternate;
     -moz-animation: neon1 .5s ease-in-out infinite alternate;
     animation: neon1 .5s ease-in-out infinite alternate;
 }
-a.backToTop i{
+a.back i{
     font-size: 10vh;
     color: rgba(255,255,255,.8);
 }
@@ -271,7 +322,7 @@ a.backToTop i{
     width:60%;
     display: block;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
 }
 .text-content{
     position: relative;
@@ -323,6 +374,64 @@ a.backToTop i{
     background-color: rgba(255,255,255,.6);
 }
 
+/* ############ SLIDE ACCESO CON SMARTBELL #######*/
+div.acceso-card{
+    position: absolute;
+    width: 20vw;
+    height: 65vh;
+    background-color: rgba(255,255,255,.5);
+    align-content: center;
+    border-radius: 8px;
+    top: 9%;
+    margin:5%;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px #fff;
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(rgba(255,255,255,.4),rgba(255,255,255,.8), rgba(255,255,255,.9)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgba(255,255,255,.4), rgba(255,255,255,.8), rgba(255,255,255,.9)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgba(255,255,255,.4), rgba(255,255,255,.8), rgba(255,255,255,.9)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgba(255,255,255,.4), rgba(255,255,255,.8), rgba(255,255,255,.9)); /* Standard syntax */
+}
+div.acceso-card .img-content{
+    width:50%;
+    margin: 0 auto;
+}
+div.acceso-card .img-content img{
+    width:100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+div.acceso-card .text-content{
+    position: relative;
+    margin: 5%;
+    margin-top: 10%;
+    text-align: justify;
+    color:black;
+    font-size: 2vh;
+}
+div.acceso-card .content h4{
+    margin: 0;
+    margin-top: 10%;
+    margin-bottom: 8%;
+    text-align: center;
+    font-size: 2vw;
+    color: black;
+}
+div.acceso-card.card-1{
+    left:2%;
+}
+div.acceso-card.card-2{
+    left:24%;
+}
+div.acceso-card.card-3{
+    left:46%;
+}
+div.acceso-card.card-4{
+    left:68%;
+}
+
+
 /*####### SLIDE CONTACTO ########*/
 #map {
     position:absolute;
@@ -333,6 +442,7 @@ a.backToTop i{
     border-radius: 8px;
     box-shadow: 0px 0px 10px #fff;
 }
+
 
 /*####### HELPER ########*/
 
