@@ -45,7 +45,7 @@ html, body {
 /*###### FONDOS DE SLIDES #######*/
 
 #main {
-    background: url('../img/BACKGROUNDS/index1.jpg') no-repeat center center;
+    background: url('../img/BACKGROUNDS/index.jpg') no-repeat center center;
     background-size: cover;
 }
 #funciones {
