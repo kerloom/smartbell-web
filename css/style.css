@@ -49,7 +49,7 @@ html, body {
     background-size: cover;
 }
 #funciones {
-    background: url('../img/BACKGROUNDS/building-op-8.png') no-repeat center center;
+    background: url('../img/BACKGROUNDS/building-op-8.jpg') no-repeat center center;
     background-size: cover;
     -webkit-transform: translate(0,100%);
     -ms-transform: translate(0,100%);
@@ -57,7 +57,7 @@ html, body {
     transform: translate(0,100%);
 }
 #funciones-2 {
-    background: url('../img/BACKGROUNDS/building-op-8.png') no-repeat center center;
+    background: url('../img/BACKGROUNDS/building-op-8.jpg') no-repeat center center;
     background-size: cover;
     -webkit-transform: translate(100%,100%);
     -ms-transform: translate(100%,100%);
@@ -65,7 +65,7 @@ html, body {
     transform: translate(100%,100%);
 }
 #acceso {
-    /*background: url('../img/BACKGROUNDS/portada1.jpg') no-repeat center center;*/
+    background: url('../img/BACKGROUNDS/acceso.jpg') no-repeat center center;
     background: rgb(255,255,255);
     background-size: cover;
     -webkit-transform: translate(100%,0%);
@@ -75,7 +75,7 @@ html, body {
     
 }
 #beneficios {
-    background: url('../img/BACKGROUNDS/portada.png') no-repeat center center;
+    background: url('../img/BACKGROUNDS/devices.jpg') no-repeat center center;
     background-size: cover;
     -webkit-transform: translate(200%,0%);
     -ms-transform: translate(200%,0%);
