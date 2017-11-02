@@ -16,7 +16,6 @@ html, body {
     top: 0;
     left: 0;
 }
-
 /*###### Slides image and position #######*/
 
 .slide {
@@ -66,7 +65,6 @@ html, body {
 }
 #acceso {
     background: url('../img/BACKGROUNDS/acceso.jpg') no-repeat center center;
-    background: rgb(255,255,255);
     background-size: cover;
     -webkit-transform: translate(100%,0%);
     -ms-transform: translate(100%,0%);
@@ -114,24 +112,31 @@ html, body {
     text-shadow: 0px 0px 10px #fff;
 }
 #acceso .caption {
+    font-size: 4vh;
     position: absolute;
     top: 5%;
     bottom: auto;
     color: #000;
 }
 #beneficios .caption {
+    font-size: 4vh;
     position: absolute;
-    right: 5%;
-    left: auto;
-    top: 10%;
+    left: 6%;
+    right: auto;
+    top: 6%;
     color: #fff;
     text-align: right;
 }
 #contacto .caption {
+    background-color: rgba(0,0,0,.8);
+    font-size: 4vh;
     position: absolute;
     top: 6%;
     color: #fff;
     font-size: 4vh;
+    width: 100%;
+    height: 3em;
+    text-align: center;
 }
 
 /*######## MAIN  SLIDE ########*/
@@ -347,26 +352,26 @@ a.back i{
 #funciones-2 .card-1 {
     /*background: url('../img/CARDS/mensajes-1-5.png') no-repeat center center;
     background-size: cover;*/
-    left: 0%;
+    left: 10%;
     background-color: rgba(255,255,255,.6);
 }
 #funciones-2 .card-2 {
    /*background: url('../img/CARDS/encuestas-1-5.png') no-repeat center center;
     background-size: cover;*/
-    left: 18%;
+    left: 28%;
     background-color: rgba(255,255,255,.6);
 }
 #funciones-2 .card-3 {
     /*background: url('../img/BACKGROUNDS/architecture.jpg') no-repeat center center;
     background-size: cover;*/
     background-color: rgba(255,255,255,.6);
-    left: 36%;
+    left: 46%;
 }
 
 #funciones-2 .card-4 {
     /*background: url('../img/BACKGROUNDS/architecture.jpg') no-repeat center center;
     background-size: cover;*/
-    left: 54%;
+    left: 64%;
     background-color: rgba(255,255,255,.6);
 }
 #funciones-2 .card-5 {
@@ -377,7 +382,8 @@ a.back i{
 }
 
 /* ############ SLIDE ACCESO CON SMARTBELL #######*/
-div.acceso-card{
+div.acceso-card,
+div.beneficios-card{
     position: absolute;
     width: 20vw;
     height: 65vh;
@@ -394,68 +400,96 @@ div.acceso-card{
     background: -moz-linear-gradient(rgba(255,255,255,.6), rgba(255,255,255,.9), rgba(255,255,255,1)); /* For Firefox 3.6 to 15 */
     background: linear-gradient(rgba(255,255,255,.6), rgba(255,255,255,.9), rgba(255,255,255,1)); /* Standard syntax */
 }
-div.acceso-card .img-content{
+div.acceso-card .img-content,
+div.beneficios-card .img-content{
     width:50%;
     margin: 0 auto;
 }
-div.acceso-card .img-content img{
+div.acceso-card .img-content img,
+div.beneficios-card .img-content img{
     width:100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
-div.acceso-card .text-content{
+div.acceso-card .text-content,
+div.beneficios-card .text-content{
     position: relative;
     margin: 5%;
-    margin-top: 10%;
+    margin-top: 5%;
     text-align: justify;
     color:black;
     font-size: 2.5vh;
 }
-div.acceso-card .content h4{
+div.acceso-card .card-content h4,
+div.beneficios-card .card-content h4{
+    position: relative;
     margin: 0;
     margin-top: 10%;
     margin-bottom: 8%;
     text-align: center;
+    height:10%;
     font-size: 2vw;
-    color: black;
 }
-div.acceso-card.card-1{
+div.acceso-card.card-1,
+div.beneficios-card.card-1{
     left:2%;
 }
-div.acceso-card.card-2{
+div.acceso-card.card-2,
+div.beneficios-card.card-2{
     left:24%;
 }
-div.acceso-card.card-3{
+div.acceso-card.card-3,
+div.beneficios-card.card-3{
     left:46%;
 }
-div.acceso-card.card-4{
+div.acceso-card.card-4,
+div.beneficios-card.card-4{
     left:68%;
 }
-
+/*####### SLIDE BENEFICIOS ########*/
 
 /*####### SLIDE CONTACTO ########*/
 #map {
     position:absolute;
     top:22%;
-    height: 60%;
-    width: 60%;
+    height: 50%;
+    width: 30%;
+    border: solid 7px rgba(0,0,0,.7);
     border-radius: 8px;
     box-shadow: 0px 0px 8px #fff;
 }
-div.datos_contacto{
-    position: absolute;
-    bottom: .2vh;
-    width: 100%;
-    height: 15vh;
-    background-color: rgba(255,255,255,.9);
-}
-div.datos_contacto_content{
-    width:33%;
-    font-size: 3vh;
-    margin: 1% 5% 2% 5%;
-}
 
+.datos-contacto{
+    position: absolute;
+    height:64%;
+    width:35%;
+    background-color: rgba(255,255,255,.9);
+    border-radius: 10%;
+}
+div.footer{
+    position: absolute;
+    bottom:0;
+    width: 100%;
+    height: 12vh;
+    background-color: rgba(0,0,0,.9);
+}
+div.footer_content1{
+    position: absolute;
+    left: 10%;
+    width: 30%;
+    font-size: 2vh;
+    margin: 1% 5% 2% 5%;
+    color: white;
+}
+div.footer_content2{
+    position: absolute;
+    right: 0;
+    width: 30%;
+    font-size: 2vh;
+    margin: 1% 5% 2% 5%;
+    color: white;
+}
 
 /*####### HELPER ########*/
 
