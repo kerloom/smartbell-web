@@ -44,8 +44,15 @@ html, body {
 /*###### FONDOS DE SLIDES #######*/
 
 #main {
-    background: url('../img/BACKGROUNDS/index.jpg') no-repeat center center;
+    background: url('../img/BACKGROUNDS/building-op-8.jpg') no-repeat center center;
+   
     background-size: cover;
+}
+.fullscreen-bg__video{
+    top: 0;
+    left: 0;
+    width: auto;
+    height: 200%;
 }
 #funciones {
     background: url('../img/BACKGROUNDS/building-op-8.jpg') no-repeat center center;
@@ -157,13 +164,12 @@ p { line-height: 3.5vh; }
     color: #fff;
     font-size: 2.5vw;
 }
-a.button{
+a.button_admin{
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 4vw;
-    right: 3%;
+    top: 3vw;
     height:3vw;
     width: 8vw;
     border: 1px solid white;
@@ -173,7 +179,7 @@ a.button{
     -moz-animation: neon1 .5s ease-in-out infinite alternate;
     animation: neon1 .5s ease-in-out infinite alternate;
 }
-a.button p{
+a.button_admin p{
     text-align: center;
     position: absolute;
     margin:auto;
@@ -256,19 +262,26 @@ div.glower i {
 }
 
 /*######## SLIDE FUNCIONES ########*/
-a.back{
+a.button_back{
     position: absolute;
     display: flex;
-    top:10%;
-    right:10%;
-    border-radius:50%;
-    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    height: 8vh;
+    width: 8vh;
+    bottom: 8vh;
+    left: 48vw;
+    border: 1px solid white;
+    border-radius: 50%;
+    background-color: transparent;
     -webkit-animation: neon1 .5s ease-in-out infinite alternate;
     -moz-animation: neon1 .5s ease-in-out infinite alternate;
     animation: neon1 .5s ease-in-out infinite alternate;
 }
-a.back i{
-    font-size: 10vh;
+a.button_back i{
+    width: 100%;
+    height: 100%;
+    font-size: 8vh;
     color: rgba(255,255,255,.8);
 }
 .card{
@@ -532,6 +545,13 @@ h1.shadow {
 }
 p.shadow {
     text-shadow: 2px 2px 3px #000;
+}
+
+.fullscreen-bg__video{
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
 }
 
 
