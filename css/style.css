@@ -550,8 +550,8 @@ p.shadow {
 .fullscreen-bg__video{
     top: 0;
     left: 0;
-    width: auto;
-    height: 200%;
+    width: 200%;
+    height: auto;
 }
 
 
